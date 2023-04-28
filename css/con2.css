@@ -1,0 +1,199 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+ /* font-family: 'Nanum Myeongjo', serif; */
+
+@font-face {
+  font-family: 'TAEBAEKmilkyway';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'S-CoreDream-3Light';
+  color: #444444;
+}
+
+/* main_______________________________ */
+
+
+main{
+  width: 100%;
+  height: 400px;
+}
+
+main .back{
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: url(../image/background11.png) no-repeat fixed;
+  z-index: -100;
+}
+
+.visual{
+  position: absolute;
+  color: #f4EEE0;
+  text-align: center;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.visual h1{
+  font-family: 'TAEBAEKmilkyway';
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 60px;
+  text-shadow: 5px 5px 8px rgba(0,0,0,0.7);
+}
+
+.visual p{
+  font-size: 20px;
+  text-shadow: 5px 5px 8px rgba(0,0,0,0.7);
+}
+
+/* section_____________________________ */
+section{
+  width: 100%;
+  background-color: #404040;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+section .container{
+  position: relative;
+  width: 1400px;
+  margin: auto;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  color: #404040;
+  display: flex;
+  flex-direction: column;
+  line-height: 60px;
+  font-size: 30px;
+}
+
+.link h1{
+  text-align: center;
+  width: 190px;
+  height: 60px;
+  background-color: rgb(255, 217, 0);
+  text-decoration-line: underline;
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+.link p{
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.member{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+
+}
+.member img{
+  margin-top: 100px;
+  position: relative;
+}
+
+.member h1{
+  text-align: center;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.member p{
+  margin-top: 15px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #666;
+}
+
+.tabMenu{margin-right: 624px;}
+.btn{overflow: hidden;}
+.btn li{
+  text-align: center;
+  float: left;
+  width: 120px;
+  background-color: #ffffff;
+  padding: 5px;
+  border-top: 2px solid transparent;
+  cursor: pointer;
+}
+.btn li:last-child {
+  width: 120px;
+  border-right: none;
+}
+.btn li:hover,
+.btn li.on{
+  color: #fff;
+  background-color: #666;
+  border-top: 4px solid rgb(255, 153, 0);
+}
+
+table {
+  text-align: center;
+  border-top: 1px solid #444444;
+  border-collapse: collapse;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+th, td {
+  width: 200px;
+  height: 100px;
+  border-bottom: 1px solid #444444;
+  border-left: 1px solid #444444;
+  padding: 10px;
+  background-color: #eeedec;
+}
+th:first-child, td:first-child {
+  border-left: none;
+}
+
+.fisrt{
+  color: #fff;
+  background-color: #666;
+}
+
+.top{
+  background-color: rgb(255, 255, 255);
+}
+
+table{display: none;}
+table.on{display: block;}
+
+.explan ul{
+  margin-top: 20px;
+  margin-bottom: 100px;
+  list-style-type:disc;
+  line-height: 30px;
+  font-size: 17px;
+}

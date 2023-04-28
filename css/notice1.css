@@ -1,0 +1,185 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+ /* font-family: 'Nanum Myeongjo', serif; */
+
+@font-face {
+  font-family: 'TAEBAEKmilkyway';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'S-CoreDream-3Light';
+}
+
+/* main_______________________________ */
+
+main{
+  width: 100%;
+  height: 400px;
+}
+
+main .back{
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: url(../image/notice1.png) no-repeat fixed;
+  filter: brightness(1.5);
+  z-index: -100;
+}
+
+.visual{
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.visual h1{
+  font-family: 'TAEBAEKmilkyway';
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 60px;
+  text-shadow: 0px 5px 8px rgba(0,0,0,1);
+}
+
+.visual p{
+  font-size: 20px;
+  text-shadow: 0px 5px 8px rgba(0,0,0,1);
+}
+
+/* section_____________________________ */
+section{
+  width: 100%;
+  background-color: #404040;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+section .container{
+  position: relative;
+  width: 1400px;
+  height: 2100px;
+  margin: auto;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section .container::after{
+  content: '';
+  position: absolute;
+  top: 72%;
+  width: 1400px;
+  height: 600px;
+  background: url(../image/notice3.png)no-repeat;
+  filter: grayscale(0.2);
+}
+
+
+/* 좌측 링크 */
+.link{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  color: #404040;
+  display: flex;
+  flex-direction: column;
+  line-height: 60px;
+  font-size: 30px;
+}
+
+.link h1{
+  text-align: center;
+  width: 150px;
+  height: 60px;
+  background-color: rgb(255, 217, 0);
+  text-decoration-line: underline;
+  font-size: 35px;
+  margin: 20px 0;
+}
+
+.link p{
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/* 본문 */
+.intro{
+  text-align: center;
+  margin: 100px 0 20px 0;
+}
+
+.intro h1{
+  font-size: 50px;
+  color: #444;
+}
+
+.intro h4{
+  margin-top: 15px;
+  font-size: 20px;
+  color: #666;
+}
+
+.learn{
+  background: url(../image/arrow.png) no-repeat center;
+  text-align: center;
+  padding-top: 100px;
+  line-height: 40px;
+}
+
+.learn h3{
+  font-family: 'TAEBAEKmilkyway';
+  font-weight: bold;
+  font-size: 30px;
+  color: #222;
+}
+
+.learn p{ margin-bottom: 60px;}
+
+.learn h1{
+  line-height: 60px;;
+  font-family: 'TAEBAEKmilkyway';
+  font-size: 50px;
+}
+
+.close img{
+  margin: 100px 0;
+  transform: scale(0.9);
+}
+
+.close{
+  z-index: 100;
+  text-align: center;
+}
+
+.close h4{ font-size: 30px;}
+
+.close p{
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 0 5px #fff;
+}
+
+

@@ -1,0 +1,226 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+ /* font-family: 'Nanum Myeongjo', serif; */
+ 
+@font-face {
+  font-family: 'TAEBAEKmilkyway';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'S-CoreDream-3Light';
+}
+
+/* main_______________________________ */
+
+
+main{
+  width: 100%;
+  height: 400px;
+}
+
+main .back{
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: url(../image/background5.png) no-repeat fixed;
+  filter: brightness(0.8);
+  z-index: -100;
+}
+
+.visual{
+  position: absolute;
+  color: #f4EEE0;
+  text-align: center;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.visual h1{
+  font-family: 'TAEBAEKmilkyway';
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 45px;
+  text-shadow: 5px 5px 8px rgba(0,0,0,0.7);
+}
+
+.visual p{
+  font-size: 20px;
+  text-shadow: 5px 5px 8px rgba(0,0,0,0.7);
+}
+
+/* section_____________________________ */
+section{
+  width: 100%;
+  background-color: #404040;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+section .container{
+  width: 1400px;
+  margin: auto;
+  background-color: #f2efe9;
+}
+
+section .sub1{
+  width: inherit;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  padding-top:100px;
+  font-weight: bold;
+}
+
+.sub1 ul{display: flex;}
+
+.sub1 li:first-child a{
+  font-size: 30px;
+  color: #f4EEE0;
+}
+
+.sub1 li:first-child{
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  background: rgba(11, 11, 11, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(87, 88, 104, 0.37);
+  backdrop-filter: blur( 20px );
+  border-radius: 10px 0 0 10px;
+
+}
+
+.sub1 li:last-child a{
+  font-size: 30px;
+  color: #404040;
+  transition: 0.2s;
+}
+
+.sub1 li:last-child{
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  border-radius: 0 10px 10px 0;
+  background: rgba(241, 241, 241, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(87, 88, 104, 0.37);
+  backdrop-filter: blur( 20px );
+  transition: 0.2s;
+}
+
+.sub1 li:last-child:hover{
+  background: rgba(11, 11, 11, 0.8);
+}
+
+.sub1 li:last-child:hover a{
+  color: #f4EEE0;
+}
+
+.container .intro{
+  width: inherit;
+  height: 300px;
+  background: url(../image/background8.png) no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container .intro p{
+  font-size: 30px;
+  text-align: center;
+  font-family: 'TAEBAEKmilkyway';
+  font-weight: bold;
+  line-height: 40px;
+  color: #34180d;
+}
+
+.container .item{
+  height: 1000px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container h1{
+  margin: 150px 0;
+  text-align: center;
+  color: #222;
+  font-size: 50px;
+  text-shadow: -5px 5px 10px rgba(0,0,0,0.3);
+}
+
+.item p{
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 50px;
+  margin-bottom: 200px;
+}
+
+.item img:nth-of-type(1){
+  position: absolute;
+  top:8%;
+  left:-18%;
+  transform: scale(0.4);
+  opacity: 0;
+}
+.item img:nth-of-type(2){
+  position: absolute;
+  top:-20%;
+  right: 5%;
+  filter: grayscale(0.2);
+  opacity: 0;
+} 
+
+.item img:nth-of-type(3){
+  position: absolute;
+  top:100%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+  filter: grayscale(0.2);
+  opacity: 0;
+}
+
+.sub2{
+  width: 1400px;
+  height: 400px;
+  background-color: #f2efe9;
+  text-align: center;
+  padding-top: 50px;
+  background: url(../image/back2.png)no-repeat bottom;
+  
+}
+
+
+.sub2 span{
+  font-size: 28px;
+  line-height: 50px;
+
+}
+
+.sub2 span b{
+  color: #34180d;
+}
+
+
